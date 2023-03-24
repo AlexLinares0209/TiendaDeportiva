@@ -384,11 +384,11 @@ footer {
     cursor: pointer;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-  }
-  
-  #btnScrollToTop i {
+}
+
+#btnScrollToTop i {
     font-size: 1.5rem;
-  }
+}
 
 
 /* Nosotros */
@@ -507,21 +507,29 @@ footer {
     background-attachment: fixed;
     background-position: center bottom;
     padding: 4rem;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
 }
 
-.filter-buttons .filter-button {
+.contenedor-filter-buttons {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter-buttons .contenedor-filter-buttons .filter-button {
     padding: 1rem 2rem;
     border: none;
     background-color: black;
     color: white;
     transition: all 0.5s ease;
     font-weight: 500;
+    font-size: .8rem;
+
+    min-width: 150px;
 }
 
-.filter-buttons .filter-button:hover {
+.filter-buttons .contenedor-filter-buttons .filter-button:hover {
     background-color: white;
     color: black;
 }
@@ -744,7 +752,7 @@ footer {
 
 .form-mantenimiento input[type=email] {
     padding: 1rem;
-    width: 55%; 
+    width: 55%;
     border: none;
     background-color: rgb(199, 199, 199);
     outline: none;
@@ -826,7 +834,7 @@ footer {
     border: none;
     border: 1px solid #e0e1e4;
     border-radius: 5px;
-    outline-color:#474747 ;
+    outline-color: #474747;
     outline-width: 0.1em;
 }
 
@@ -961,7 +969,7 @@ footer {
     border: none;
     border: 1px solid #e0e1e4;
     border-radius: 5px;
-    outline-color:#474747 ;
+    outline-color: #474747;
     outline-width: 0.1em;
 }
 
@@ -1064,7 +1072,7 @@ footer {
     border: none;
     border: 1px solid #e0e1e4;
     border-radius: 5px;
-    outline-color:#474747 ;
+    outline-color: #474747;
     outline-width: 0.1em;
 }
 
@@ -1161,7 +1169,7 @@ footer {
         padding: 8rem 10%;
         padding-bottom: 3rem;
     }
-    
+
     .contenedor-padre2 {
         padding: 8rem 10%;
         padding-bottom: 3rem;
@@ -1180,11 +1188,11 @@ footer {
         background-color: white;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
     }
-    
+
     .cont-usuario-text h2 {
         font-size: 1.1rem;
     }
-    
+
     .cont-usuario-text p {
         font-size: .8rem;
     }
@@ -1243,7 +1251,7 @@ footer {
     .texto h2 {
         font-size: 2rem;
     }
-    
+
     .texto p {
         font-size: .9rem;
     }
@@ -1257,10 +1265,15 @@ footer {
     }
 
     .form-mantenimiento input[type=email] {
-        width: 65%; 
+        width: 65%;
     }
 
     .contenedor-mantenimiento div .regresar {
         font-size: 1rem;
+    }
+
+
+    .filter-buttons .contenedor-filter-buttons .filter-button {
+        width: 70%;
     }
 }

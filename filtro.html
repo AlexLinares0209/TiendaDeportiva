@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filter Example</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Scrollreveal -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="index.html" class="logo">
+            LOGO<span>TIENDA</span>
+        </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav-bar">
+            <ul id="links">
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a class="actived" href="filtro.html">catálogo</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="faq.html">faq</a></li>
+                <ul>
+                    <li class="iconos"><a href="ingresar.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="iconos"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="filter-buttons">
+        <div class="contenedor-filter-buttons">
+            <button class="filter-button todas">Todas</button>
+            <button class="filter-button ultimas">último 2022</button>
+            <button class="filter-button retro">Retro</button>
+            <button class="filter-button femenino">Femenino</button>
+            <button class="filter-button historicas">Historicas</button>
+        </div>
+    </div>
+
+    <div class="gallery">
+
+        <div class="producto ultimas">
+            <div class="tarjeta" id="tarjeta-1">
+                <img id="imagen-original-1" src="./imagenes/imagen-original-1.png" alt="Camiseta Argentina titular">
+                <img id="imagen-reemplazo-2" src="./imagenes/imagen-reemplazo-1.jpg" alt="Camiseta Argentina reversa"
+                    style="display: none;">
+                <span class="oferta">20% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA TITULAR ARGENTINA</p>
+                <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                <p class="precio-del-producto">S/.239.2</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.299</span></p>
+            </div>
+            <!-- 
+                    <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+                 -->
+
+        </div>
+
+        <div class="producto ultimas">
+            <div class="tarjeta" id="tarjeta-2">
+                <img id="imagen-original-2" src="./imagenes/imagen-original-2.png" alt="Camiseta Belgica titular">
+                <img id="imagen-reemplazo-2" src="./imagenes/imagen-reemplazo-2.jpg" alt="Camiseta Belgica reversa"
+                    style="display: none;">
+                <span class="oferta">20% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA TITULAR BELGICA</p>
+                <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                <p class="precio-del-producto">S/.299</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.299</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+        <div class="producto ultimas">
+            <div class="tarjeta" id="tarjeta-3">
+                <img id="imagen-original-3" src="./imagenes/imagen-original-3.png"" alt=" Camiseta Alemania titular">
+                <img id="imagen-reemplazo-3" src="./imagenes/imagen-reemplazo-3.png" alt="Camiseta Alemania reversa"
+                    style="display: none;">
+                <span class="oferta">20% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA ALTERNA ALEMANIA</p>
+                <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                <p class="precio-del-producto">S/.239.2</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.299</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+        <div class="producto">
+            <div class="tarjeta" id="tarjeta-4">
+                <img id="imagen-original-4" src="./imagenes/imagen-original-4.png" alt="Camiseta Japón titular">
+                <img id="imagen-reemplazo-4" src="./imagenes/imagen-reemplazo-4.jpg" alt="Camiseta Japón reversa"
+                    style="display: none;">
+                <span class="oferta">20% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA TITULAR JAPÓN</p>
+                <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                <p class="precio-del-producto">S/.299</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.299</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+        <div class="producto femenino">
+            <div class="tarjeta" id="tarjeta-5">
+                <img id="imagen-original-5" src="./imagenes/imagen-original-5.png" alt="Camiseta barcelona femenino">
+                <img id="imagen-reemplazo-5" src="./imagenes/imagen-reemplazo-5.jpg"
+                    alt="Camiseta barcelona femenino reversa" style="display: none;">
+                <span class="oferta">20% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA BARCELONA FEM</p>
+                <p class="descripcion-producto">Camiseta oficial fem 2022</p>
+                <p class="precio-del-producto">S/.299</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.299</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+        <div class="producto retro">
+            <div class="tarjeta" id="tarjeta-6">
+                <img id="imagen-original-6" src="./imagenes/imagen-original-6.png" alt="Camiseta barcelona 1999">
+                <img id="imagen-reemplazo-6" src="./imagenes/imagen-reemolazo-6.jpg"
+                    alt="Camiseta barcelona 1999 reversa" style="display: none;">
+                <span class="oferta">30% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA BARCELONA 1999</p>
+                <p class="descripcion-producto">Camiseta oficial 1999</p>
+                <p class="precio-del-producto">S/.279.3</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.399</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+        <div class="producto historicas">
+            <div class="tarjeta" id="tarjeta-11">
+                <img id="imagen-original-11" src="./imagenes/imagen-original-11.png" alt="Camiseta barcelona 1999">
+                <img id="imagen-reemplazo-11" src="./imagenes/imagen-reemplazo-11.jpeg"
+                    alt="Camiseta barcelona 1999 reversa" style="display: none;">
+                <span class="oferta">30% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA RONALDINHO 2002</p>
+                <p class="descripcion-producto">Camiseta oficial Corea 2002</p>
+                <p class="precio-del-producto">S/.279.3</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.399</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+        <div class="producto historicas">
+            <div class="tarjeta" id="tarjeta-12">
+                <img id="imagen-original-12" src="./imagenes/imagen-original-12.png" alt="Camiseta arsenal 2003-2004">
+                <img id="imagen-reemplazo-12" src="./imagenes/imagen-reemplazo-12.jpg"
+                    alt="Camiseta arsenal 2003-2004 reversa" style="display: none;">
+                <span class="oferta">20% OFF</span>
+                <span class="envio">ENVÍO 24 HRS</span>
+            </div>
+            <div class="info">
+                <p class="titulo-producto">CAMISETA ARSENAL 2003/04</p>
+                <p class="descripcion-producto">Camiseta oficial campeón</p>
+                <p class="precio-del-producto">S/.312</p>
+                <p class="precio-del-producto-oferta" style="color: #dc3545; font-size: .9rem;">Antes <span
+                        style="text-decoration: line-through; color:#dc3545;">S/.390</span></p>
+            </div>
+            <!-- <a href="" class="boton-añadir-carrito">Añadir al carrito</a> -->
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="contenedor-footer-informacion">
+                <div class="footer-informacion">
+                    <h2>CONTACTO</h2>
+                    <ul>
+                        <li>Dirección:
+                            Lima, Perú.</span></li>
+                        <li>WhatsApp:
+                            901204711</li>
+                        <li>Email:
+                            alexlinares0209@gmail.com</li>
+                        <li>Horario:
+                            Lun - Sáb / 9:00AM - 10:00PM</li>
+                        <li>Tiempos de Envío</li>
+                        <li>Mi Cuenta</li>
+                        <li>Nosotros</li>
+                        <li>Política de Privacidad</li>
+                    </ul>
+                </div>
+                <div class="footer-informacion">
+                    <h2>SERVICIO AL CLIENTE</h2>
+                    <ul>
+                        <li>Compramos tu Camiseta</li>
+                        <li>Nuestros Productos</li>
+                        <li>Métodos de Pago</li>
+                        <li>Seguimiento</li>
+                        <li>Tiempos de Envío</li>
+                        <li>Mi Cuenta</li>
+                        <li>Nosotros</li>
+                        <li>Política de Privacidad</li>
+                    </ul>
+                </div>
+                <div class="footer-informacion">
+                    <h2>ETIQUETAS POPULARES</h2>
+                    <ul class="populares">
+                        <li>22/23</li>
+                        <li>Adidas</li>
+                        <li>A pedido</li>
+                        <li>Edición Especial</li>
+                        <li>Entrega Inmediata</li>
+                        <li>Ofertas</li>
+                        <li>Messi</li>
+                        <li>Retro</li>
+                    </ul>
+                </div>
+
+                <div class="footer-informacion">
+                    <h2>SUSCRÍBETE AL BOLETÍN</h2>
+                    <p>Obtenga toda la información reciente sobre eventos, <br> productos y ofertas. <br> Suscríbase al
+                        boletín de noticias:</p>
+                    <form action="">
+                        <div>
+                            <input type="email" placeholder="Tu correo electrónico">
+                        </div>
+                        <div>
+                            <input type="submit" value="SUSCRIBIRME">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="contenedor-footer-derechos">
+            <p>LogoTienda Perú. 2023 - Todos los derechos reservados</p>
+            <ul>
+                <li><i class="fa-brands fa-cc-visa"></i></li>
+                <li><i class="fa-brands fa-cc-paypal"></i></li>
+            </ul>
+        </div>
+    </footer>
+
+    <button id="btnScrollToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <script src="./js/filtro.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/boton.js"></script>
+    <script src="./js/scroll.js"></script>
+</body>
+
+</html>

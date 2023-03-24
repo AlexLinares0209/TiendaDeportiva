@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Scrollreveal -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Estilos -->
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+        <a href="index.html" class="logo">
+            LOGO<span>TIENDA</span>
+        </a>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="nav-bar">
+            <ul id="links">
+                <li><a class="actived" href="index.html">inicio</a></li>
+                <li><a href="nosotros.html">nosotros</a></li>
+                <li><a href="filtro.html">catálogo</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="faq.html">faq</a></li>
+                <ul>
+                    <li class="iconos"><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="iconos"><a href="ingresar.html"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="iconos"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de presentación -->
+
+    <section class="cover">
+        <div class="cover-hijo">
+            <h1 class="titulo">Lorem ipsum dolor sit amet.</h1>
+            <button class="boton"> <a href="servicios.html">Lorem, ipsum dolor.</a></button>
+        </div>
+    </section>
+
+    <!-- Sección de cards -->
+
+    <div class="caja-contenedor-cards">
+        <h2 style="text-align: center;">NUEVOS INGRESOS</h2>
+        <div class="contenedor-cards">
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-1" src="./imagenes/imagen-original-1.png" alt="Camiseta Argentina titular">
+                    <img id="imagen-reemplazo-2" src="./imagenes/imagen-reemplazo-1.jpg" alt="Camiseta Argentina reversa" style="display: none;">
+                    <span class="oferta">20% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CAMISETA TITULAR ARGENTINA</p>
+                    <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                    <p class="precio-del-producto">S/.239.2</p>
+                    <p class="precio-del-producto-oferta">Antes<span>S/.299</span></p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+        
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-2" src="./imagenes/imagen-original-2.png" alt="Camiseta Belgica titular">
+                    <img id="imagen-reemplazo-2" src="./imagenes/imagen-reemplazo-2.jpg" alt="Camiseta Belgica reversa" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CAMISETA TITULAR BELGICA</p>
+                    <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                    <p class="precio-del-producto">S/.299</p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+    
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-3" src="./imagenes/imagen-original-3.png"" alt="Camiseta Alemania titular">
+                    <img id="imagen-reemplazo-3" src="./imagenes/imagen-reemplazo-3.png" alt="Camiseta Alemania reversa" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CAMISETA ALTERNA ALEMANIA</p>
+                    <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                    <p class="precio-del-producto">S/.239.2</p>
+                    <p class="precio-del-producto-oferta">Antes<span>S/.299</span></p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+        
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-4" src="./imagenes/imagen-original-4.png" alt="Camiseta Japón titular">
+                    <img id="imagen-reemplazo-4" src="./imagenes/imagen-reemplazo-4.jpg" alt="Camiseta Japón reversa" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CAMISETA TITULAR JAPÓN</p>
+                    <p class="descripcion-producto">Camiseta oficial Qatar 2022</p>
+                    <p class="precio-del-producto">S/.299</p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+        </div>
+        <a class="ver-catalogo" href="filtro.html">Ver cátalogo</a>
+    </div>
+
+    <!-- Barra de información -->
+
+    <div class="barra-informacion">
+        <div class="items-de-informacion">
+            <div class="item1">
+                <i class="fa-solid fa-truck"></i>
+                <h2>entrega rápida</h2>
+                <p>Pedidos en casa en un plazo de 24/48h.</p>
+            </div>
+            <div class="item2">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <h2>compra segura</h2>
+                <p>Las compra se realizan de forma segura.</p>
+            </div>
+            <div class="item3">
+                <i class="fa-solid fa-credit-card"></i>
+                <h2>pago seguro</h2>
+                <p>Transacciones de pago de forma segura.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Otras cards -->
+
+    <div class="caja-contenedor-cards">
+        <h2 style="text-align: center;">OTROS PRODUCTOS</h2>
+        <div class="contenedor-cards">
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-7" src="./imagenes/imagen-original-7.png" alt="vista de chimpunes predator edge">
+                    <img id="imagen-reemplazo-7" src="./imagenes/imagen-reemplazo-7.jpg" alt="Otra vista de chimpunes predator edge" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CHIMPUNES PREDATOR EDGE</p>
+                    <p class="descripcion-producto">Adidas Low terreno firm</p>
+                    <p class="precio-del-producto">S/.269.1</p>
+                    <p class="precio-del-producto-oferta">Antes<span>S/.299</span></p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+        
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-8" src="./imagenes/imagen-original-8.png" alt="Camiseta Belgica titular">
+                    <img id="imagen-reemplazo-8" src="./imagenes/imagen-reemplazo-8.jpg" alt="Camiseta Belgica reversa" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CHIMPUNES PREDATOR EDGE</p>
+                    <p class="descripcion-producto">Adidas Low Azul firm</p>
+                    <p class="precio-del-producto">S/.269.1</p>
+                    <p class="precio-del-producto-oferta">Antes<span>S/.299</span></p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+    
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-9" src="./imagenes/imagen-original-9.png"" alt="Chimpunes predatos edge">
+                    <img id="imagen-reemplazo-9" src="./imagenes/imagen-reemplazo-9.jpg" alt="otra vista de Chimpunes predatos edge" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CHIMPUNES PREDATOR EDGE</p>
+                    <p class="descripcion-producto">Adidas Low Cloud white</p>
+                    <p class="precio-del-producto">S/.269.1</p>
+                    <p class="precio-del-producto-oferta">Antes<span>S/.299</span></p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+        
+            <div class="producto">
+                <div class="tarjeta">
+                    <img id="imagen-original-10" src="./imagenes/imagen-original-10.png" alt="Chimpunes x speedportal">
+                    <img id="imagen-reemplazo-10" src="./imagenes/imagen-reemplazo-10.jpg" alt="otra vista de Chimpunes x speedporta" style="display: none;">
+                    <span class="oferta">10% OFF</span>
+                    <span class="envio">ENVÍO 24 HRS</span>
+                </div>
+                <div class="info">
+                    <p class="titulo-producto">CHIMPUNES X SPEEDPORTAL</p>
+                    <p class="descripcion-producto">Adidas Low Solar Green</p>
+                    <p class="precio-del-producto">S/.269.1</p>
+                    <p class="precio-del-producto-oferta">Antes <span>S/.299</span></p>
+                </div>
+                <a href="" class="boton-añadir-carrito">Añadir al carrito</a>
+            </div>
+        </div>
+        <a class="ver-catalogo" href="filtro.html">Ver cátalogo</a>
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="contenedor-footer-informacion">
+                <div class="footer-informacion">
+                    <h2>CONTACTO</h2>
+                    <ul>
+                        <li>Dirección:
+                            Lima, Perú.</span></li>
+                        <li>WhatsApp:
+                            901204711</li>
+                        <li>Email:
+                            alexlinares0209@gmail.com</li>
+                        <li>Horario:
+                            Lun - Sáb / 9:00AM - 10:00PM</li>
+                        <li>Tiempos de Envío</li>
+                        <li>Mi Cuenta</li>
+                        <li>Nosotros</li>
+                        <li>Política de Privacidad</li>
+                    </ul>
+                </div>
+                <div class="footer-informacion">
+                    <h2>SERVICIO AL CLIENTE</h2>
+                    <ul>
+                        <li>Compramos tu Camiseta</li>
+                        <li>Nuestros Productos</li>
+                        <li>Métodos de Pago</li>
+                        <li>Seguimiento</li>
+                        <li>Tiempos de Envío</li>
+                        <li>Mi Cuenta</li>
+                        <li>Nosotros</li>
+                        <li>Política de Privacidad</li>
+                    </ul>
+                </div>
+                <div class="footer-informacion">
+                    <h2>ETIQUETAS POPULARES</h2>
+                    <ul class="populares">
+                        <li>22/23</li>
+                        <li>Adidas</li>
+                        <li>A pedido</li>
+                        <li>Edición Especial</li>
+                        <li>Entrega Inmediata</li>
+                        <li>Ofertas</li>
+                        <li>Messi</li>
+                        <li>Retro</li>
+                    </ul>
+                </div>
+                
+                 
+                    <div class="footer-informacion">
+                    <h2>SUSCRÍBETE AL BOLETÍN</h2>
+                    <p>Obtenga toda la información reciente sobre eventos, <br> productos y ofertas. <br> Suscríbase al boletín de noticias:</p>
+                    <form action="">
+                        <div class="">
+                            <input type="email" placeholder="Tu correo electrónico">
+                        </div>
+                        <div>
+                            <input type="submit" value="SUSCRIBIRME">
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="contenedor-footer-derechos">
+            <p>LogoTienda Perú. 2023 - Todos los derechos reservados</p>
+            <ul>
+                <li><i class="fa-brands fa-cc-visa"></i></li>
+                <li><i class="fa-brands fa-cc-paypal"></i></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Botón para subir automaticamente -->
+
+    <button id="btnScrollToTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/boton.js"></script>
+    <script src="./js/scroll.js"></script>
+
+</body>
+
+</html>

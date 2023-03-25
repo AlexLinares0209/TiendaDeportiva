@@ -44,12 +44,11 @@ header nav ul {
 }
 
 header nav ul li {
-    margin-left: 2rem;
     position: relative;
-
 }
 
 header nav ul li a {
+    margin-left: 2rem;
     color: white;
     font-size: 1.1rem;
     transition: all 0.5s ease;
@@ -73,10 +72,10 @@ a:hover:not(.actived) {
 
 .checkbtn {
     line-height: 80px;
-    font-size: 30px;
+    font-size: 1.5rem;
     float: right;
     cursor: pointer;
-    margin-right: 40px;
+    *margin-right: 40px;
     display: none;
 }
 
@@ -306,6 +305,7 @@ footer {
 
 .contenedor-footer .footer-informacion ul li {
     margin-bottom: .8rem;
+    font-size: 1rem;
 }
 
 .footer-informacion form {
@@ -330,6 +330,7 @@ footer {
 }
 
 .footer-informacion form input[type=submit] {
+    width: 35%;
     padding: 1rem 2rem;
     border: none;
     border-radius: 15px;
@@ -1235,6 +1236,10 @@ footer {
         line-height: 30px;
     }
 
+    header nav ul li a {
+        margin-left: 0;
+    }
+
     #check:checked~nav {
         left: 0;
     }
@@ -1275,5 +1280,17 @@ footer {
 
     .filter-buttons .contenedor-filter-buttons .filter-button {
         width: 70%;
+    }
+
+    .contenedor-footer .footer-informacion h2 {
+        font-size: 1rem;
+    }
+    
+    .contenedor-footer .footer-informacion ul li {
+        font-size: .9rem;
+    }
+    
+    .contenedor-footer-derechos p {
+        font-size: .9rem;
     }
 }

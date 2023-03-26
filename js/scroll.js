@@ -18,6 +18,7 @@ sr.reveal('.items-de-informacion', {
     distance: '-100px'
 })
 
+
 sr.reveal('.contenedor-footer-informacion', {
     duration: 3000,
     origin: 'right',
@@ -25,12 +26,6 @@ sr.reveal('.contenedor-footer-informacion', {
 })
 
 sr.reveal('.contenedor-footer-derechos', {
-    duration: 3000,
-    origin: 'right',
-    distance: '-100px'
-})
-
-sr.reveal('.footer', {
     duration: 3000,
     origin: 'right',
     distance: '-100px'

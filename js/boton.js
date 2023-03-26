@@ -3,6 +3,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
+    
     var btnScrollToTop = document.getElementById("btnScrollToTop");
 
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

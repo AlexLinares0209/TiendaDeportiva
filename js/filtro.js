@@ -1,5 +1,3 @@
-
-
 const gallery = document.querySelector('.gallery');
 const filterButtons = document.querySelectorAll('.filter-buttons button');
 
@@ -22,4 +20,3 @@ filterButtons.forEach(button => {
     });
   });
 });
-

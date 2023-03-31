@@ -7,7 +7,7 @@ filterButtons.forEach(button => {
     const images = gallery.querySelectorAll('.producto');
 
     images.forEach(image => {
-      if (filterValue === 'todas') {        
+      if (filterValue === 'todas') {   
         image.classList.remove('hide');
         image.classList.add('show');
       } else if (image.classList.contains(filterValue)) {

@@ -1,8 +1,8 @@
-var tarjetas = document.querySelectorAll(".tarjeta");
+let tarjetas = document.querySelectorAll(".tarjeta");
 
   tarjetas.forEach(function(tarjeta) {
-    var imagenOriginal = tarjeta.querySelector("img:first-of-type");
-    var imagenReemplazo = tarjeta.querySelector("img:last-of-type");
+    let imagenOriginal = tarjeta.querySelector("img:first-of-type");
+    let imagenReemplazo = tarjeta.querySelector("img:last-of-type");
 
     // Agrega un evento 'mouseover' a cada contenedor
     tarjeta.addEventListener("mouseover", function() {

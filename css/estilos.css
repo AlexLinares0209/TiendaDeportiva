@@ -96,8 +96,7 @@ a:hover:not(.actived) {
     background-size: cover;
     background-color: rgba(44, 44, 44, 0.6);
     background-blend-mode: darken;
-    background-attachment: fixed;
-    background-position: center top;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -474,7 +473,7 @@ footer {
 
 .informacion-nosotros .contenedor-informacion p {
     text-align: justify;
-    font-size: 1.1rem;
+    font-size: 1rem;
     line-height: 2rem;
 }
 

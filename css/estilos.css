@@ -20,6 +20,18 @@
     font-family: 'Poppins', sans-serif;
 }
 
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 0;
+    background-color: #fe481c;
+    z-index: 9999;
+    transition: width 0.3s ease;
+  }
+  
+
 header {
     background-color: black;
     height: 80px;
@@ -35,6 +47,7 @@ header .logo {
     color: var(--white);
     font-size: 1.3rem;
     letter-spacing: -1px;
+    transition: all 0.5s ease;
 }
 
 header nav ul {
@@ -56,6 +69,28 @@ header nav ul li a {
 
 header nav ul li a:hover {
     color: #fe481c;
+}
+
+.icono-carrito {
+    position: relative;
+}
+
+.icono-carrito .circulo-carrito {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fe481c;
+    color: var(--white);
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -90,7 +125,7 @@ a:hover:not(.actived) {
 }
 
 .cover {
-    height: 80vh;
+    height: 90vh;
     background-image: url(../imagenes/fondo-presentacion.jpg);
     color: white;
     background-size: cover;
@@ -102,6 +137,8 @@ a:hover:not(.actived) {
     align-items: start;
     flex-direction: column;
     padding: 0rem 10%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .cover-hijo .titulo {
@@ -148,9 +185,24 @@ a:hover:not(.actived) {
 }
 
 .caja-contenedor-cards h2 {
-    text-decoration: underline;
+    *text-decoration: underline;
     text-decoration-color: #fe481c;
-    text-decoration-thickness: 4px;
+    *text-decoration-thickness: 4px;
+
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.caja-contenedor-cards h2::after {
+    content: '';
+    width: 76px;
+    height: 5px;
+    background: #fe481c;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius: 3px;
 }
 
 .contenedor-cards {
@@ -446,6 +498,9 @@ footer {
     align-items: start;
     flex-direction: column;
     padding: 2rem 10%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
 }
 
 
@@ -467,7 +522,7 @@ footer {
 }
 
 .informacion-nosotros .contenedor-informacion h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: justify;
 }
 
@@ -587,6 +642,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
 }
 
 .barra-informacion .items-de-informacion {

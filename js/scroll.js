@@ -6,6 +6,12 @@ sr.reveal('.cover-hijo', {
     distance: '-100px'
 })
 
+sr.reveal('.titulo-card', {
+    duration: 3000,
+    origin: 'right',
+    distance: '-100px'
+})
+
 sr.reveal('.contenedor-cards', {
     duration: 3000,
     origin: 'right',
